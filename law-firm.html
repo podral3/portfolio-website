@@ -92,76 +92,106 @@
             </div>
         </div>
 
-        <!-- UI Previews -->
-        <div class="space-y-40 mb-40">
-            <!-- Screen 1 & 2 -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="order-2 lg:order-1">
-                    <div class="ui-mockup">
-                        <div class="bg-forest-900 h-8 flex items-center px-4 gap-2">
-                            <div class="w-2 h-2 rounded-full bg-red-400"></div>
-                            <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-                        </div>
-                        <div class="p-4 bg-slate-50 border-b border-slate-200 flex justify-between items-center">
-                            <div class="text-[10px] font-bold text-forest-900/40">Case Overview Dashboard</div>
-                            <div class="px-2 py-1 bg-grass-500 rounded text-[10px] text-white font-bold">New Case +</div>
-                        </div>
-                        <div class="p-6 space-y-4">
-                            <div class="h-4 w-3/4 bg-slate-200 rounded animate-pulse"></div>
-                            <div class="space-y-2">
-                                <div class="grid grid-cols-4 gap-4">
-                                    <div class="h-8 bg-white rounded border border-slate-100 shadow-sm"></div>
-                                    <div class="h-8 bg-white rounded border border-slate-100 shadow-sm"></div>
-                                    <div class="h-8 bg-white rounded border border-slate-100 shadow-sm"></div>
-                                    <div class="h-8 bg-white rounded border border-slate-100 shadow-sm"></div>
-                                </div>
-                                <div class="h-40 bg-white rounded-xl border border-slate-100 shadow-sm p-4 space-y-3">
-                                    <div class="h-2 w-full bg-slate-50 rounded"></div>
-                                    <div class="h-2 w-full bg-slate-50 rounded"></div>
-                                    <div class="h-2 w-full bg-slate-50 rounded"></div>
-                                    <div class="h-2 w-2/3 bg-slate-50 rounded"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2">
-                    <h2 class="text-4xl font-black mb-6" data-i18n="s1-t">Holistic Matter Management</h2>
-                    <p class="text-xl text-forest-900/60 leading-relaxed mb-8" data-i18n="s1-d">The dashboard provides a high-level view of the firm's caseload. Users can browse cases, filter by department, and access detailed document previews without leaving the primary context. Every case is a living entity, linking documents, events, and clients seamlessly.</p>
-                </div>
+        <!-- Product Tour -->
+        <div class="mb-40">
+            <div class="text-center mb-20">
+                <span class="text-grass-600 font-bold uppercase tracking-widest text-sm" data-i18n="tour-tag">Product Tour</span>
+                <h2 class="text-5xl font-black mt-4 mb-6" data-i18n="tour-title">See It in Action</h2>
+                <p class="text-xl text-forest-900/60 max-w-2xl mx-auto" data-i18n="tour-subtitle">A guided walkthrough of the platform's core modules — from firm setup to document automation.</p>
             </div>
 
-            <!-- Screen 3 & 4 -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h2 class="text-4xl font-black mb-6" data-i18n="s2-t">Integrated Document Studio</h2>
-                    <p class="text-xl text-forest-900/60 leading-relaxed mb-8" data-i18n="s2-d">The application features a powerful in-app document viewer and template manager. Lawyers can upload standard .docx files, and the system instantly turns them into smart forms. The calendar module further bridges documentation with deadlines, ensuring that every legal act is filed on time.</p>
-                </div>
-                <div>
-                    <div class="ui-mockup">
-                        <div class="bg-forest-900 h-8 flex items-center px-4 gap-2">
-                            <div class="w-2 h-2 rounded-full bg-slate-700"></div>
-                            <div class="w-2 h-2 rounded-full bg-slate-700"></div>
+            <div class="space-y-32 max-w-full">
+
+                <!-- Step 1: Organization -->
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
+                    <div class="order-2 lg:order-1 lg:col-span-4">
+                        <div class="ui-mockup">
+                            <img src="/law/org_details.webp" alt="Organization management interface" class="w-full" loading="lazy" />
                         </div>
-                        <div class="flex h-64">
-                            <div class="w-1/3 bg-slate-50 border-r border-slate-200 p-4 space-y-4">
-                                <div class="h-2 w-full bg-grass-200 rounded"></div>
-                                <div class="h-2 w-2/3 bg-slate-200 rounded"></div>
-                                <div class="pt-4 space-y-2">
-                                    <div class="h-8 bg-white rounded border border-slate-200"></div>
-                                    <div class="h-8 bg-white rounded border border-slate-200"></div>
-                                </div>
-                            </div>
-                            <div class="flex-1 p-6 space-y-4">
-                                <div class="h-full bg-white rounded border border-slate-200 p-4 flex flex-col justify-center items-center text-slate-300 italic text-xs">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mb-2 opacity-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
-                                    Interactive Document Preview
-                                </div>
-                            </div>
+                    </div>
+                    <div class="order-1 lg:order-2 lg:col-span-1">
+                        <span class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-grass-500 text-white font-black text-2xl mb-4">1</span>
+                        <h2 class="text-2xl font-black mb-4 leading-tight" data-i18n="tour-1-t">Organizational Structure</h2>
+                        <p class="text-base text-forest-900/70 leading-relaxed" data-i18n="tour-1-d">Build your firm's hierarchy from the ground up. Create departments, define roles, and manage every team member from a single, centralized dashboard. Everyone knows where they fit — and so does the system.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2: Cases + File Preview -->
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
+                    <div class="lg:col-span-1">
+                        <span class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-grass-500 text-white font-black text-2xl mb-4">2</span>
+                        <h2 class="text-2xl font-black mb-4 leading-tight" data-i18n="tour-2-t">Effortless Case Management</h2>
+                        <p class="text-base text-forest-900/70 leading-relaxed" data-i18n="tour-2-d">Browse your entire caseload at a glance with powerful filtering and sorting. Attach DOCX and PDF files directly to any case and preview them instantly — no downloads, no context-switching, no friction.</p>
+                    </div>
+                    <div class="space-y-6 lg:col-span-4">
+                        <div class="ui-mockup">
+                            <img src="/law/cases_list.webp" alt="Case list with filters and sorting" class="w-full" loading="lazy" />
+                        </div>
+                        <div class="ui-mockup">
+                            <img src="/law/file_preview.webp" alt="In-app document preview for DOCX and PDF files" class="w-full" loading="lazy" />
                         </div>
                     </div>
                 </div>
+
+                <!-- Step 3: Clients -->
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
+                    <div class="order-2 lg:order-1 lg:col-span-4">
+                        <div class="ui-mockup">
+                            <img src="/law/client_details.webp" alt="Client profile and case history" class="w-full" loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 lg:col-span-1">
+                        <span class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-grass-500 text-white font-black text-2xl mb-4">3</span>
+                        <h2 class="text-2xl font-black mb-4 leading-tight" data-i18n="tour-3-t">Client Profiles, Simplified</h2>
+                        <p class="text-base text-forest-900/70 leading-relaxed" data-i18n="tour-3-d">Maintain a comprehensive, searchable database of every client. Contact details, identification numbers, and full case history — everything lives in one unified profile, always one click away.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4: Emails -->
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
+                    <div class="lg:col-span-1">
+                        <span class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-grass-500 text-white font-black text-2xl mb-4">4</span>
+                        <h2 class="text-2xl font-black mb-4 leading-tight" data-i18n="tour-4-t">Your Inbox, Built In</h2>
+                        <p class="text-base text-forest-900/70 leading-relaxed" data-i18n="tour-4-d">Access all your emails without ever leaving the platform. Sync your inbox from any major provider and keep every conversation tied to the right case and client — communication stays where the work happens.</p>
+                    </div>
+                    <div class="lg:col-span-4">
+                        <div class="ui-mockup">
+                            <img src="/law/emails.webp" alt="Integrated email inbox synced with providers" class="w-full" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5: Calendar -->
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
+                    <div class="order-2 lg:order-1 lg:col-span-4">
+                        <div class="ui-mockup">
+                            <img src="/law/calendar.webp" alt="Calendar with meetings and deadlines" class="w-full" loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 lg:col-span-1">
+                        <span class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-grass-500 text-white font-black text-2xl mb-4">5</span>
+                        <h2 class="text-2xl font-black mb-4 leading-tight" data-i18n="tour-5-t">Calendar &amp; Scheduling</h2>
+                        <p class="text-base text-forest-900/70 leading-relaxed" data-i18n="tour-5-d">Stay on top of every hearing, meeting, and filing deadline. The integrated calendar keeps your entire practice organized and ensures nothing slips through the cracks.</p>
+                    </div>
+                </div>
+
+                <!-- Step 6: Document Templates -->
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
+                    <div class="lg:col-span-1">
+                        <span class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-grass-500 text-white font-black text-2xl mb-4">6</span>
+                        <h2 class="text-2xl font-black mb-4 leading-tight" data-i18n="tour-6-t">Smart Document Templates</h2>
+                        <p class="text-base text-forest-900/70 leading-relaxed" data-i18n="tour-6-d">Turn repetitive paperwork into a one-click process. Upload any DOCX template, define your variables, and generate perfectly formatted documents filled with live case data — no word processor needed, ever.</p>
+                    </div>
+                    <div class="space-y-6 lg:col-span-4">
+                        <div class="ui-mockup">
+                            <img src="/law/szablon_create.webp" alt="Template creation with variable mapping" class="w-full" loading="lazy" />
+                        </div>
+                        <div class="ui-mockup">
+                            <img src="/law/szablon_preveiw.webp" alt="Generated document preview from template" class="w-full" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -239,10 +269,21 @@
                 "f2-d": "Transform Word files into repeatable templates. Automatically map case-specific variables to document placeholders, reducing manual work by up to 90%.",
                 "f3-t": "Unified Client CRM",
                 "f3-d": "Secure database for individuals and corporate entities. Tracks contact details, PESEL, and associated case history in one persistent profile.",
-                "s1-t": "Holistic Matter Management",
-                "s1-d": "The dashboard provides a high-level view of the firm's caseload. Users can browse cases, filter by department, and access detailed document previews without leaving the primary context. Every case is a living entity, linking documents, events, and clients seamlessly.",
-                "s2-t": "Integrated Document Studio",
-                "s2-d": "The application features a powerful in-app document viewer and template manager. Lawyers can upload standard .docx files, and the system instantly turns them into smart forms. The calendar module further bridges documentation with deadlines, ensuring that every legal act is filed on time.",
+                "tour-tag": "Product Tour",
+                "tour-title": "See It in Action",
+                "tour-subtitle": "A guided walkthrough of the platform's core modules — from firm setup to document automation.",
+                "tour-1-t": "Organizational Structure",
+                "tour-1-d": "Build your firm's hierarchy from the ground up. Create departments, define roles, and manage every team member from a single, centralized dashboard. Everyone knows where they fit — and so does the system.",
+                "tour-2-t": "Effortless Case Management",
+                "tour-2-d": "Browse your entire caseload at a glance with powerful filtering and sorting. Attach DOCX and PDF files directly to any case and preview them instantly — no downloads, no context-switching, no friction.",
+                "tour-3-t": "Client Profiles, Simplified",
+                "tour-3-d": "Maintain a comprehensive, searchable database of every client. Contact details, identification numbers, and full case history — everything lives in one unified profile, always one click away.",
+                "tour-4-t": "Your Inbox, Built In",
+                "tour-4-d": "Access all your emails without ever leaving the platform. Sync your inbox from any major provider and keep every conversation tied to the right case and client — communication stays where the work happens.",
+                "tour-5-t": "Calendar & Scheduling",
+                "tour-5-d": "Stay on top of every hearing, meeting, and filing deadline. The integrated calendar keeps your entire practice organized and ensures nothing slips through the cracks.",
+                "tour-6-t": "Smart Document Templates",
+                "tour-6-d": "Turn repetitive paperwork into a one-click process. Upload any DOCX template, define your variables, and generate perfectly formatted documents filled with live case data — no word processor needed, ever.",
                 "roadmap-tag": "Future Vision",
                 "roadmap-title": "LexAI: The Intelligence Layer",
                 "plan1-t": "Statute Knowledge Hub",
@@ -263,10 +304,21 @@
                 "f2-d": "Zmień pliki Word w powtarzalne szablony. Automatycznie mapuj zmienne ze spraw do dokumentów, redukując pracę ręczną nawet o 90%.",
                 "f3-t": "Scentralizowany CRM",
                 "f3-d": "Bezpieczna baza danych osób i firm. Śledzi dane kontaktowe, PESEL i historię spraw w jednym trwałym profilu.",
-                "s1-t": "Kompleksowe zarządzanie sprawami",
-                "s1-d": "Pulpit nawigacyjny zapewnia wgląd w obciążenie pracą kancelarii. Użytkownicy mogą przeglądać sprawy, filtrować je i uzyskiwać dostęp do podglądu dokumentów bez opuszczania głównego widoku. Każda sprawa jest żywym bytem łączącym dokumenty, wydarzenia i klientów.",
-                "s2-t": "Zintegrowane Studio Dokumentów",
-                "s2-d": "Aplikacja posiada potężną przeglądarkę dokumentów i menedżera szablonów. Prawnicy mogą przesyłać standardowe pliki .docx, a system natychmiast zamienia je w inteligentne formularze. Moduł kalendarza dodatkowo łączy dokumentację z terminami.",
+                "tour-tag": "Prezentacja Produktu",
+                "tour-title": "Zobacz w Akcji",
+                "tour-subtitle": "Przewodnik po kluczowych modułach platformy — od konfiguracji kancelarii po automatyzację dokumentów.",
+                "tour-1-t": "Struktura Organizacyjna",
+                "tour-1-d": "Zbuduj hierarchię swojej kancelarii od podstaw. Twórz działy, przypisuj role i zarządzaj każdym członkiem zespołu z jednego, scentralizowanego panelu. Każdy wie, gdzie jest jego miejsce — system również.",
+                "tour-2-t": "Łatwe Zarządzanie Sprawami",
+                "tour-2-d": "Przeglądaj wszystkie sprawy jednym rzutem oka dzięki zaawansowanemu filtrowaniu i sortowaniu. Dołączaj pliki DOCX i PDF bezpośrednio do spraw i przeglądaj je natychmiast — bez pobierania, bez przełączania kontekstu.",
+                "tour-3-t": "Profile Klientów",
+                "tour-3-d": "Prowadź kompleksową, przeszukiwalną bazę każdego klienta. Dane kontaktowe, numery identyfikacyjne i pełna historia spraw — wszystko w jednym, ujednoliconym profilu, zawsze na wyciągnięcie ręki.",
+                "tour-4-t": "Wbudowana Skrzynka Mailowa",
+                "tour-4-d": "Uzyskaj dostęp do wszystkich e-maili bez opuszczania platformy. Zsynchronizuj skrzynkę z dowolnym dostawcą i powiąż każdą rozmowę z właściwą sprawą i klientem — komunikacja zostaje tam, gdzie praca.",
+                "tour-5-t": "Kalendarz i Harmonogram",
+                "tour-5-d": "Bądź na bieżąco z każdą rozprawą, spotkaniem i terminem. Zintegrowany kalendarz utrzymuje porządek w całej kancelarii i dba, by nic nie umknęło uwadze.",
+                "tour-6-t": "Inteligentne Szablony Dokumentów",
+                "tour-6-d": "Zamień powtarzalną dokumentację w proces jednego kliknięcia. Prześlij dowolny szablon DOCX, zdefiniuj zmienne i generuj idealnie sformatowane dokumenty wypełnione aktualnymi danymi sprawy — bez edytora tekstu.",
                 "roadmap-tag": "Wizja Przyszłości",
                 "roadmap-title": "LexAI: Warstwa Inteligencji",
                 "plan1-t": "Hub Wiedzy Prawnej",

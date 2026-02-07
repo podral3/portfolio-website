@@ -25,7 +25,6 @@ RUN npm install -g serve
 
 # Copy built files from builder
 COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/public ./public
 
 # Expose port
 EXPOSE 3000
@@ -34,5 +33,5 @@ EXPOSE 3000
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
   CMD node -e "require('http').get('http://localhost:3000', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"
 
-# Start the application (serve without -s flag to allow multi-page routing)
-CMD ["serve", "dist", "-l", "3000"]
+# Start the application (-s flag enables SPA fallback for Vue Router)
+CMD ["serve", "dist", "-s", "-l", "3000"]

@@ -8,29 +8,41 @@ const tourSteps = [
     num: 1,
     titleKey: 'youtubeAnalyzer.tour1t',
     descKey: 'youtubeAnalyzer.tour1d',
-    images: ['/youtube/api_setup.webp'],
+    images: ['/ytanalyzer/dashboard.png'],
+    browserUrl: 'localhost:5173/dashboard',
     layout: 'image-left',
   },
   {
     num: 2,
     titleKey: 'youtubeAnalyzer.tour2t',
     descKey: 'youtubeAnalyzer.tour2d',
-    images: ['/youtube/channel_import.webp'],
+    images: ['/ytanalyzer/prompts.png'],
+    browserUrl: 'localhost:5173/prompts',
     layout: 'image-right',
   },
   {
     num: 3,
     titleKey: 'youtubeAnalyzer.tour3t',
     descKey: 'youtubeAnalyzer.tour3d',
-    images: ['/youtube/transcript_prompt.webp'],
+    images: ['/ytanalyzer/channel_dashboard.png'],
+    browserUrl: 'localhost:5173/channels/1',
     layout: 'image-left',
   },
   {
     num: 4,
     titleKey: 'youtubeAnalyzer.tour4t',
     descKey: 'youtubeAnalyzer.tour4d',
-    images: ['/youtube/results_dashboard.webp'],
+    images: ['/ytanalyzer/video_list.png'],
+    browserUrl: 'localhost:5173/channels/1/videos',
     layout: 'image-right',
+  },
+  {
+    num: 5,
+    titleKey: 'youtubeAnalyzer.tour5t',
+    descKey: 'youtubeAnalyzer.tour5d',
+    images: ['/ytanalyzer/analysis_details.png'],
+    browserUrl: 'localhost:5173/analysis/42',
+    layout: 'image-left',
   },
 ]
 </script>
@@ -100,7 +112,21 @@ const tourSteps = [
             step.images.length > 1 ? 'space-y-6' : ''
           ]">
             <div v-for="img in step.images" :key="img" class="ui-mockup">
-              <img :src="img" :alt="t(step.titleKey)" class="w-full" loading="lazy" />
+              <!-- Browser chrome -->
+              <div class="flex items-center gap-3 px-4 py-2.5 bg-gray-100 border-b border-gray-200">
+                <div class="flex gap-1.5">
+                  <span class="w-3 h-3 rounded-full bg-[#FF5F57]"></span>
+                  <span class="w-3 h-3 rounded-full bg-[#FEBC2E]"></span>
+                  <span class="w-3 h-3 rounded-full bg-[#28C840]"></span>
+                </div>
+                <div class="flex-1 flex justify-center">
+                  <div class="bg-white rounded-md px-4 py-1 text-xs text-gray-400 font-mono min-w-[40%] text-center border border-gray-200">
+                    {{ step.browserUrl }}
+                  </div>
+                </div>
+                <div class="w-[54px]"></div>
+              </div>
+              <img :src="img" :alt="t(step.titleKey)" class="max-w-full h-auto" loading="lazy" />
             </div>
           </div>
         </div>
@@ -167,7 +193,7 @@ const tourSteps = [
       <router-link to="/#contact" class="px-8 py-4 bg-forest-900 text-white rounded-2xl font-bold hover:bg-forest-700 transition-all inline-block mb-10">
         {{ t('youtubeAnalyzer.footerCta') }}
       </router-link>
-      <p class="text-forest-900/40 text-sm font-mono">&copy; 2024 Michał Podralski</p>
+      <p class="text-forest-900/40 text-sm font-mono">&copy; 2026 Michał Podralski</p>
     </div>
   </footer>
 </template>

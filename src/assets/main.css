@@ -107,6 +107,6 @@
   background: white;
   border-radius: 1.5rem;
   overflow: hidden;
-  border: 1px solid rgba(132, 204, 22, 0.1);
-  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08);
 }

@@ -14,6 +14,11 @@ const router = createRouter({
       name: 'law-firm',
       component: () => import('@/views/LawFirmView.vue'),
     },
+    {
+      path: '/youtube-analyzer',
+      name: 'youtube-analyzer',
+      component: () => import('@/views/YoutubeAnalyzerView.vue'),
+    },
   ],
   scrollBehavior(to, _from, savedPosition) {
     if (to.hash) {

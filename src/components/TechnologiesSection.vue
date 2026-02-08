@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { Icon } from '@iconify/vue'
 
 const { t } = useI18n()
 
@@ -20,34 +21,34 @@ interface TechItem {
 
 const techData: Record<Category, TechItem[]> = {
   backend: [
-    { name: 'C#', logo: '/Logo_C_sharp.svg' },
-    { name: 'ASP.NET' },
-    { name: 'SignalR' },
-    { name: 'Xunit' },
-    { name: 'TestContainers' },
-    { name: 'JWT' },
+    { name: 'C#', logo: 'logos:c-sharp' },
+    { name: 'ASP.NET', logo: 'logos:dotnet' },
+    { name: 'Entity Framework Core', logo: 'devicon:entityframeworkcore' },
+    { name: 'SignalR', logo: '/public/skills/signalr.svg' }, 
+    { name: 'Xunit', logo: '/public/skills/xunit.svg' },
+    { name: 'TestContainers', logo: '/public/skills/testcontainers-logo.svg' },
+    { name: 'JWT', logo: 'devicon:jwt' },
   ],
   databases: [
-    { name: 'PostgreSQL', logo: '/Postgresql_elephant.svg' },
-    { name: 'SQLite' },
-    { name: 'MongoDB' },
+    { name: 'PostgreSQL', logo: 'logos:postgresql' },
+    { name: 'SQLite', logo: 'logos:sqlite' },
+    { name: 'MongoDB', logo: 'logos:mongodb-icon' },
   ],
   devops: [
-    { name: 'Docker' },
-    { name: 'Linux', logo: '/Tux.svg' },
-    { name: 'Bruno' },
+    { name: 'Docker', logo: 'logos:docker-icon' },
+    { name: 'Linux', logo: 'logos:tux' },
+    { name: 'Bruno', logo: 'simple-icons:bruno' },
   ],
 }
 </script>
 
 <template>
-  <section id="technologies">
+  <section id="technologies" class="py-16">
     <div class="mb-12 text-center">
       <span class="text-grass-600 font-bold uppercase tracking-widest text-xs">Toolkit</span>
       <h2 class="text-4xl md:text-5xl font-extrabold mt-2">{{ t('skills.title') }}</h2>
     </div>
 
-    <!-- Category Buttons -->
     <div class="flex flex-wrap justify-center gap-3 mb-12">
       <button
         v-for="cat in categories"
@@ -64,22 +65,33 @@ const techData: Record<Category, TechItem[]> = {
       </button>
     </div>
 
-    <!-- Technologies Grid -->
-    <div class="max-w-4xl mx-auto mb-32">
+    <div class="max-w-4xl mx-auto px-4">
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         <div
           v-for="tech in techData[activeCategory]"
           :key="tech.name"
-          class="flex flex-col items-center justify-center p-6 bg-white rounded-2xl border-2 border-grass-100 hover:border-grass-500 hover:shadow-lg transition-all h-32"
+          class="flex flex-col items-center justify-center p-6 bg-white rounded-2xl border-2 border-grass-100 hover:border-grass-500 hover:shadow-lg transition-all h-36"
         >
-          <img
-            v-if="tech.logo"
-            :src="tech.logo"
-            :alt="tech.name"
-            class="w-12 h-12 mb-3 object-contain"
-          />
-          <div v-else class="w-12 h-12 mb-3 bg-grass-100 rounded-lg"></div>
-          <span class="text-sm font-bold text-center">{{ tech.name }}</span>
+          <template v-if="tech.logo">
+            <img 
+              v-if="tech.logo.startsWith('/')" 
+              :src="tech.logo" 
+              :alt="tech.name" 
+              class="w-12 h-12 mb-3 object-contain" 
+            />
+            
+            <Icon 
+              v-else 
+              :icon="tech.logo" 
+              class="w-12 h-12 mb-3" 
+            />
+          </template>
+
+          <div v-else class="w-12 h-12 mb-3 bg-grass-50 rounded-lg flex items-center justify-center">
+             <Icon icon="ph:code-bold" class="text-grass-300 w-6 h-6" />
+          </div>
+
+          <span class="text-sm font-bold text-center leading-tight">{{ tech.name }}</span>
         </div>
       </div>
     </div>

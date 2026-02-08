@@ -55,6 +55,7 @@ export default {
     vimap: {
       title: 'Vimap sp. z o.o.',
       role: 'Programista .NET',
+      duration: '1 rok',
       desc: 'Tworzenie aplikacji wewnętrznych do przetwarzania danych przestrzennych, integrujących zaawansowaną wizualizację 3D LiDAR z niestandardowymi silnikami renderującymi. Budowa wysokowydajnych rozwiązań mapowych i narzędzi do analiz geoprzestrzennych dostosowanych do procesów firmowych.',
     },
   },

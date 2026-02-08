@@ -56,6 +56,7 @@ export default {
     vimap: {
       title: 'Vimap sp. z o.o.',
       role: '.NET Developer',
+      duration: '1 year',
       desc: 'Developed internal applications for spatial data processing, integrating advanced 3D LiDAR visualization with custom rendering engines. Built high-performance mapping solutions and geospatial analysis tools tailored for enterprise workflows.',
     },
   },

@@ -18,7 +18,10 @@ const { t } = useI18n()
           </div>
           <div class="flex-1">
             <h3 class="text-2xl font-bold mb-2 group-hover:text-grass-700 transition-colors">{{ t('experience.vimap.title') }}</h3>
-            <p class="text-grass-600 font-bold text-sm mb-4">{{ t('experience.vimap.role') }}</p>
+            <div class="flex items-center gap-2 mb-4">
+              <p class="text-grass-600 font-bold text-sm">{{ t('experience.vimap.role') }}</p>
+              <span class="text-xs text-forest-900/50 px-2 py-1 bg-grass-100 rounded">{{ t('experience.vimap.duration') }}</span>
+            </div>
             <p class="text-forest-900/70 leading-relaxed mb-4">{{ t('experience.vimap.desc') }}</p>
             <div class="flex flex-wrap gap-2">
               <span class="px-3 py-1 bg-forest-900 text-white text-xs font-bold rounded-lg">.NET</span>

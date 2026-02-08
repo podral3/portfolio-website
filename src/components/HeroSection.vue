@@ -23,19 +23,24 @@ const { t } = useI18n()
         <h1 class="text-6xl md:text-8xl font-extrabold text-white leading-[1.1] mb-8">
           Michał <br /><span class="text-gradient">Podralski</span>
         </h1>
-        <p class="text-xl text-grass-100/70 mb-10 leading-relaxed font-medium">
-          <span class="text-white">{{ t('hero.backendDev') }}</span>
-          {{ ' ' }}
-          <template v-if="$i18n.locale === 'pl'">
-            posiadający umiejętności
-            <span class="text-white">{{ t('hero.devops') }}</span>
-            aspirujący na stanowisko solution architect. Łączę umiejętność głębokiego rozumienia problemów biznesowych z dostarczaniem praktycznych, dopasowanych rozwiązań. Moje doświadczenie w zarządzaniu projektami interdyscyplinarnymi nauczyło mnie wartości współpracy w zespołach, gdzie każdy członek wnosi unikalne kompetencje. Najlepiej pracuję w środowisku, które pozwala mi skupić się na moich mocnych stronach, jednocześnie czerpiąc z ekspertyzy innych.
+        <i18n-t 
+          keypath="hero.description" 
+          tag="p" 
+          class="text-xl text-grass-100/70 mb-10 leading-relaxed font-medium"
+        >
+          <template #backendDev>
+            <span class="text-grass-100 drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">Backend Developer</span>
           </template>
-          <template v-else>
-            with <span class="text-white">{{ t('hero.devops') }}</span>
-            mindset aspiring to become a solution architect. I combine the ability to deeply understand business problems with delivering practical, tailored solutions. My experience in managing interdisciplinary projects has taught me the value of collaboration in teams where each member brings unique competencies. I work best in environments that allow me to focus on my strengths while drawing on the expertise of others.
+          <template #devops>
+            <span class="text-grass-100 drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">Dev Ops</span>
           </template>
-        </p>
+           <template #solutionarchitect>
+            <span class="text-grass-100 drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">Solution Architect</span>
+          </template>
+           <template #interdisciplinary>
+            <span class="text-grass-100 drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">interdisciplinary</span>
+          </template>
+        </i18n-t>
         <div class="flex flex-wrap gap-5">
           <a href="#projects" class="px-8 py-4 bg-grass-500 hover:bg-grass-400 text-forest-950 font-bold rounded-2xl transition-all shadow-xl shadow-grass-500/20 flex items-center gap-2">
             <span>{{ t('hero.cta') }}</span>

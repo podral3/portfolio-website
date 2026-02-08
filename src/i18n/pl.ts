@@ -7,7 +7,11 @@ export default {
   },
   hero: {
     badge: 'Dostępny do nowych wyzwań',
-    description: '{backendDev} posiadający umiejętności {devops} aspirujący na stanowisko solution architect. Łączę umiejętność głębokiego rozumienia problemów biznesowych z dostarczaniem praktycznych, dopasowanych rozwiązań. Moje doświadczenie w zarządzaniu projektami interdyscyplinarnymi nauczyło mnie wartości współpracy w zespołach, gdzie każdy członek wnosi unikalne kompetencje. Najlepiej pracuję w środowisku, które pozwala mi skupić się na moich mocnych stronach, jednocześnie czerpiąc z ekspertyzy innych.',
+    description: `{backendDev} posiadający umiejętności {devops} aspirujący na stanowisko {solutionarchitect}.
+    Łączę umiejętność głębokiego rozumienia problemów biznesowych z dostarczaniem praktycznych, dopasowanych rozwiązań.
+    Moje doświadczenie w zarządzaniu interdyscyplinarnymi projektami nauczyło mnie wartości współpracy w zespołach,
+    gdzie każdy członek wnosi unikalne kompetencje. Najlepiej pracuję w środowisku, które pozwala mi skupić się na moich mocnych
+    stronach, jednocześnie czerpiąc z ekspertyzy innych.`,
     backendDev: 'Backend Developer',
     devops: 'DevOps',
     cta: 'Zobacz moje prace',

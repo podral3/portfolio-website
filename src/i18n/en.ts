@@ -7,7 +7,11 @@ export default {
   },
   hero: {
     badge: 'Available for new challenges',
-    description: '{backendDev} with {devops} mindset aspiring to become a solution architect. I combine the ability to deeply understand business problems with delivering practical, tailored solutions. My experience in managing interdisciplinary projects has taught me the value of collaboration in teams where each member brings unique competencies. I work best in environments that allow me to focus on my strengths while drawing on the expertise of others.',
+    description: `{backendDev} with {devops} mindset aspiring to become a {solutionarchitect}. 
+    I combine the ability to deeply understand business problems with delivering practical, tailored solutions.
+    My experience in managing {interdisciplinary} projects has taught me the value of collaboration in teams where each member
+    brings unique competencies. I enjoy tackling complex challenges that demand venturing into research and development territories.
+    I work best in environments that allow me to focus on my strengths while drawing on the expertise of others.`,
     backendDev: 'Backend Developer',
     devops: 'DevOps',
     cta: 'View my work',

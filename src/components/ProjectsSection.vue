@@ -23,7 +23,7 @@ const { t } = useI18n()
         <div class="h-64 bg-grass-50 flex items-center justify-center relative overflow-hidden">
           <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#84cc16_1px,transparent_1px)] [background-size:20px_20px]"></div>
           <div class="p-8 bg-white rounded-3xl shadow-xl text-grass-600 group-hover:scale-110 transition-transform duration-700">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" /></svg>
+            <img src="/law/icon.png" alt="Law Firm Management System" class="w-16 h-16 object-contain" />
           </div>
         </div>
         <div class="p-10">
@@ -55,7 +55,7 @@ const { t } = useI18n()
         <div class="h-64 bg-lime-50 flex items-center justify-center relative overflow-hidden">
           <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#84cc16_1px,transparent_1px)] [background-size:20px_20px]"></div>
           <div class="p-8 bg-white rounded-3xl shadow-xl text-grass-600 group-hover:scale-110 transition-transform duration-700">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5.172a4 4 0 0 1 5.656 5.656L10 16.485 4.343 10.828a4 4 0 0 1 5.657-5.656z" /><path d="M10 11V7" /><path d="M10 11H6" /><path d="M10 11h4" /><path d="M10 11v4" /></svg>
+            <img src="/dogwalk/dogIcon.jpg" alt="DoggyWalk App" class="w-16 h-16 object-contain" />
           </div>
         </div>
         <div class="p-10">

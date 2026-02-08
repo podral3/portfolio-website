@@ -39,6 +39,17 @@ export default {
       title: 'The vision of the ideal student campus from an international perspective',
       authors: 'W. Ryczko, I. Tkaczyk, J. Deoniziak, A. Konwicki, J. Tobolski, M. Podralski, T. Barganowski',
     },
+    thesis: {
+      title: 'Alternative methods of precise positioning and mapping in geodesy',
+      type: 'Bachelor\'s Thesis',
+      desc: `Review of Methods and Tools for Precise Positioning in Geodesy and Related Fields.
+      The paper analyzes the SLAM algorithm as an alternative to traditional measurement methods.
+      It was applied to data from the budget stereo camera Intel RealSense D455f, focusing on accuracy
+      evaluation and practical implementation on a small scale.`,
+      university: 'University of Warmia and Mazury in Olsztyn',
+      year: '2024',
+      hoverHint: 'Hover to preview',
+    },
   },
   experience: {
     title: 'Professional Experience',

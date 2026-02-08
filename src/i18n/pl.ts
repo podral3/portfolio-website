@@ -39,6 +39,16 @@ export default {
       title: 'Wizja idealnego kampusu studenckiego z perspektywy międzynarodowej',
       authors: 'W. Ryczko, I. Tkaczyk, J. Deoniziak, A. Konwicki, J. Tobolski, M. Podralski, T. Barganowski',
     },
+    thesis: {
+      title: 'Alternatywne metody precyzyjnego pozycjonowania i mapowania przestrzennego w geodezji',
+      type: 'Praca Inżynierska',
+      desc: `Przegląd metod i narzędzi do precyzyjnego pozycjonowania w geodezji i pokrewnych dziedzinach.
+      Praca analizuje algorytm SLAM jako alternatywę dla tradycyjnych metod pomiarowych. Zastosowano go na danych z budżetowej
+      kamery stereoskopowej Intel RealSense D455f, koncentrując się na ocenie dokładności oraz praktycznym wdrożeniu na małą skalę.`,
+      university: 'Uniwersytet Warmińsko-Mazurski w Olsztynie',
+      year: '2024',
+      hoverHint: 'Najedź aby zobaczyć podgląd',
+    },
   },
   experience: {
     title: 'Doświadczenie Zawodowe',

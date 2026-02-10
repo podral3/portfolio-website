@@ -19,6 +19,11 @@ const router = createRouter({
       name: 'youtube-analyzer',
       component: () => import('@/views/YoutubeAnalyzerView.vue'),
     },
+    {
+      path: '/gekon',
+      name: 'gekon',
+      component: () => import('@/views/GekonView.vue'),
+    },
   ],
   scrollBehavior(to, _from, savedPosition) {
     if (to.hash) {

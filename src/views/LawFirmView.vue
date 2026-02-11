@@ -63,6 +63,21 @@ const tourSteps = [
       <p class="text-2xl text-forest-900/60 leading-relaxed max-w-3xl">{{ t('lawFirm.description') }}</p>
     </div>
 
+    <!-- Client Section -->
+    <div class="mb-32 p-10 bg-gradient-to-br from-grass-50 to-white rounded-3xl border border-grass-100">
+      <span class="text-grass-600 font-bold uppercase tracking-widest text-xs">{{ t('lawFirm.clientTag') }}</span>
+      <h2 class="text-3xl font-black mt-3 mb-4">{{ t('lawFirm.clientTitle') }}</h2>
+      <p class="text-lg text-forest-900/70 leading-relaxed mb-6 max-w-3xl">{{ t('lawFirm.clientDesc') }}</p>
+      <a href="https://znajomizprawem.pl" target="_blank" rel="noopener noreferrer" 
+         class="inline-flex items-center gap-2 text-grass-600 font-bold hover:text-grass-700 transition-colors group">
+        <span>{{ t('lawFirm.clientWebsite') }}</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M7 17L17 7" />
+          <path d="M7 7h10v10" />
+        </svg>
+      </a>
+    </div>
+
     <!-- Features Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-32">
       <div class="p-8 bg-white rounded-3xl border border-grass-100 feature-card">

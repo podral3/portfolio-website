@@ -22,13 +22,13 @@ export default {
     law: {
       title: 'Law Firm Management System',
       desc: 'Enterprise-grade system for managing document flow and legal cases.',
-      role: 'My Role (Back-end & DevOps)',
-      roleDesc: 'Delivering custom solution for a company including CI/CD pipeline, deployment and monitoring.',
+      role: 'My Role (Full-Stack)',
+      roleDesc: 'Designed and developed a custom, full-stack solution tailored for the Law Society\'s unique regulatory needs.',
     },
     dog: {
       title: 'DoggyWalk',
       desc: 'Mobile application integrating a local community of dog owners via real-time location sharing.',
-      role: 'My Role (Full-Stack)',
+      role: 'My Role (Backend Developer)',
       roleDesc: 'ASP .NET Api built with Backend for Frontend pattern, real-time location sharing using SignalR and maintaining PostgreSQL database.',
     },
     youtube: {
@@ -87,6 +87,10 @@ export default {
     category: 'LegalOps Infrastructure',
     title: 'Advancing Law Firm Productivity through Modern ERP',
     description: "A robust command center designed for legal professionals. It bridges the gap between complex legal workflows and efficient system automation, focusing on data integrity and high-performance backend architecture.",
+    clientTag: 'Client',
+    clientTitle: 'Association for Legal Aid and Education',
+    clientDesc: 'The "Friends with Law" Association entrusted me with creating a comprehensive system to manage their law firm. This non-profit organization is supporting people in need of legal assistance and educating the public about law.',
+    clientWebsite: 'Visit their website',
     f1t: 'Case Lifecycle Hub',
     f1d: 'End-to-end management of lawsuits. Advanced filtering by status, signature, and priority ensures a clutter-free view of the active firm portfolio.',
     f2t: 'Smart DocGen Engine',

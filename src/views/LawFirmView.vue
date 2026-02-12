@@ -183,8 +183,8 @@ const tourSteps = [
         </div>
         <div>
           <p class="text-grass-800 font-bold mb-4">DevOps</p>
-          <p>Docker Swarm</p>
-          <p>Nginx Ingress</p>
+          <p>Docker</p>
+          <p>Github Actions</p>
         </div>
       </div>
     </div>

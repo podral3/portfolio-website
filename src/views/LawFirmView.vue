@@ -1,52 +1,77 @@
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-const tourSteps = [
+const bentoItems = [
   {
-    num: 1,
-    titleKey: 'lawFirm.tour1t',
-    descKey: 'lawFirm.tour1d',
-    images: ['/law/org_details.webp'],
-    layout: 'image-left',
+    id: 'cases_list',
+    image: '/law/cases_list.png',
+    titleKey: 'lawFirm.bento_cases_list_t',
+    descKey: 'lawFirm.bento_cases_list_d',
   },
   {
-    num: 2,
-    titleKey: 'lawFirm.tour2t',
-    descKey: 'lawFirm.tour2d',
-    images: ['/law/cases_list.webp', '/law/file_preview.webp'],
-    layout: 'image-right',
+    id: 'client_details',
+    image: '/law/client_details.png',
+    titleKey: 'lawFirm.bento_client_details_t',
+    descKey: 'lawFirm.bento_client_details_d',
   },
   {
-    num: 3,
-    titleKey: 'lawFirm.tour3t',
-    descKey: 'lawFirm.tour3d',
-    images: ['/law/client_details.webp'],
-    layout: 'image-left',
+    id: 'emails',
+    image: '/law/emails_fixed.jpg',
+    titleKey: 'lawFirm.bento_emails_t',
+    descKey: 'lawFirm.bento_emails_d',
   },
   {
-    num: 4,
-    titleKey: 'lawFirm.tour4t',
-    descKey: 'lawFirm.tour4d',
-    images: ['/law/emails.webp'],
-    layout: 'image-right',
+    id: 'file_preview',
+    image: '/law/file_preview.png',
+    titleKey: 'lawFirm.bento_file_preview_t',
+    descKey: 'lawFirm.bento_file_preview_d',
   },
   {
-    num: 5,
-    titleKey: 'lawFirm.tour5t',
-    descKey: 'lawFirm.tour5d',
-    images: ['/law/calendar.webp'],
-    layout: 'image-left',
+    id: 'szablon',
+    image: '/law/szablon_create.png',
+    titleKey: 'lawFirm.bento_szablon_t',
+    descKey: 'lawFirm.bento_szablon_d',
   },
   {
-    num: 6,
-    titleKey: 'lawFirm.tour6t',
-    descKey: 'lawFirm.tour6d',
-    images: ['/law/szablon_create.webp', '/law/szablon_preveiw.webp'],
-    layout: 'image-right',
+    id: 'calendar',
+    image: '/law/calendar.png',
+    titleKey: 'lawFirm.bento_calendar_t',
+    descKey: 'lawFirm.bento_calendar_d',
   },
 ]
+
+const selectedImage = ref<string | null>(null)
+const selectedTitle = ref<string>('')
+
+const openLightbox = (image: string, title: string) => {
+  selectedImage.value = image
+  selectedTitle.value = title
+  document.body.style.overflow = 'hidden'
+}
+
+const closeLightbox = () => {
+  selectedImage.value = null
+  selectedTitle.value = ''
+  document.body.style.overflow = ''
+}
+
+const handleKeydown = (e: KeyboardEvent) => {
+  if (e.key === 'Escape' && selectedImage.value) {
+    closeLightbox()
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('keydown', handleKeydown)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', handleKeydown)
+  document.body.style.overflow = ''
+})
 </script>
 
 <template>
@@ -103,38 +128,54 @@ const tourSteps = [
       </div>
     </div>
 
-    <!-- Product Tour -->
+    <!-- Bento Grid -->
     <div class="mb-40">
-      <div class="text-center mb-20">
-        <span class="text-grass-600 font-bold uppercase tracking-widest text-sm">{{ t('lawFirm.tourTag') }}</span>
-        <h2 class="text-5xl font-black mt-4 mb-6">{{ t('lawFirm.tourTitle') }}</h2>
-        <p class="text-xl text-forest-900/60 max-w-2xl mx-auto">{{ t('lawFirm.tourSubtitle') }}</p>
+      <div class="text-center mb-16">
+        <span class="text-grass-600 font-bold uppercase tracking-widest text-sm">{{ t('lawFirm.bentoTag') }}</span>
+        <h2 class="text-5xl font-black mt-4 mb-6">{{ t('lawFirm.bentoTitle') }}</h2>
+        <p class="text-xl text-forest-900/60 max-w-2xl mx-auto">{{ t('lawFirm.bentoSubtitle') }}</p>
       </div>
 
-      <div class="space-y-32 max-w-full">
+      <div class="bento-grid">
         <div
-          v-for="step in tourSteps"
-          :key="step.num"
-          class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center"
+          v-for="item in bentoItems"
+          :key="item.id"
+          :class="['bento-item', `bento-${item.id}`]"
+          @click="openLightbox(item.image, t(item.titleKey))"
         >
-          <!-- Text side -->
-          <div :class="step.layout === 'image-left' ? 'order-1 lg:order-2 lg:col-span-1' : 'lg:col-span-1'">
-            <span class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-grass-500 text-white font-black text-2xl mb-4">{{ step.num }}</span>
-            <h2 class="text-2xl font-black mb-4 leading-tight">{{ t(step.titleKey) }}</h2>
-            <p class="text-base text-forest-900/70 leading-relaxed">{{ t(step.descKey) }}</p>
-          </div>
-          <!-- Images side -->
-          <div :class="[
-            step.layout === 'image-left' ? 'order-2 lg:order-1 lg:col-span-4' : 'lg:col-span-4',
-            step.images.length > 1 ? 'space-y-6' : ''
-          ]">
-            <div v-for="img in step.images" :key="img" class="ui-mockup">
-              <img :src="img" :alt="t(step.titleKey)" class="w-full" loading="lazy" />
-            </div>
+          <img :src="item.image" :alt="t(item.titleKey)" loading="lazy" />
+          <div class="bento-overlay">
+            <h3>{{ t(item.titleKey) }}</h3>
+            <p>{{ t(item.descKey) }}</p>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Lightbox Modal -->
+    <Teleport to="body">
+      <Transition name="lightbox-fade">
+        <div
+          v-if="selectedImage"
+          class="lightbox-backdrop"
+          @click="closeLightbox"
+        >
+          <button
+            class="lightbox-close"
+            @click="closeLightbox"
+            aria-label="Close"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+          </button>
+          <div class="lightbox-content" @click.stop>
+            <img :src="selectedImage" :alt="selectedTitle" />
+            <p class="lightbox-title">{{ selectedTitle }}</p>
+          </div>
+        </div>
+      </Transition>
+    </Teleport>
 
     <!-- Roadmap -->
     <section class="bg-forest-950 rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden">

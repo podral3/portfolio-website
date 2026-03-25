@@ -45,6 +45,10 @@ export default {
       title: 'The vision of the ideal student campus from an international perspective',
       authors: 'W. Ryczko, I. Tkaczyk, J. Deoniziak, A. Konwicki, J. Tobolski, M. Podralski, T. Barganowski',
     },
+    article2: {
+      title: 'Preliminary Research on the Possibility of Automating the Identification of Pollen Grains in Melissopalynology Using AI, with Particular Emphasis on Computer Image Analysis Methods',
+      authors: 'K. Litwińczyk, M. Podralski, P. Skorynko, E. Malinowska, Z. Czarnota, B. Bąk, A. Janowski',
+    },
     thesis: {
       title: 'Alternative methods of precise positioning and mapping in geodesy',
       type: 'Bachelor\'s Thesis',

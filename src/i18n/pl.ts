@@ -45,6 +45,10 @@ export default {
       title: 'Wizja idealnego kampusu studenckiego z perspektywy międzynarodowej',
       authors: 'W. Ryczko, I. Tkaczyk, J. Deoniziak, A. Konwicki, J. Tobolski, M. Podralski, T. Barganowski',
     },
+    article2: {
+      title: 'Wstępne badania nad możliwością automatyzacji identyfikacji ziaren pyłku w melisopalinologii z wykorzystaniem AI, ze szczególnym uwzględnieniem metod analizy obrazów komputerowych',
+      authors: 'K. Litwińczyk, M. Podralski, P. Skorynko, E. Malinowska, Z. Czarnota, B. Bąk, A. Janowski',
+    },
     thesis: {
       title: 'Alternatywne metody precyzyjnego pozycjonowania i mapowania przestrzennego w geodezji',
       type: 'Praca Inżynierska',

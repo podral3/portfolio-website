@@ -61,6 +61,25 @@ const showThesisImages = ref(false)
         </transition>
       </div>
       <a
+        href="https://www.mdpi.com/1424-8220/26/7/2043"
+        target="_blank"
+        class="group block p-8 bg-white rounded-3xl border border-grass-100 hover:border-grass-400 hover:shadow-xl hover:shadow-grass-500/5 transition-all"
+      >
+        <div class="flex items-start gap-6">
+          <div class="p-4 bg-grass-50 rounded-2xl text-grass-600 group-hover:bg-grass-500 group-hover:text-white transition-colors shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" /><path d="M8 7h6" /><path d="M8 11h8" /></svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-xl mb-2 group-hover:text-grass-700 transition-colors leading-snug">{{ t('academic.article2.title') }}</h4>
+            <p class="text-forest-900/60 text-sm mb-4">{{ t('academic.article2.authors') }}</p>
+            <div class="flex flex-wrap items-center gap-4">
+              <span class="px-3 py-1 bg-slate-100 rounded-lg text-xs font-bold text-slate-600">Sensors (MDPI) • 2026</span>
+              <span class="text-xs text-grass-600 font-mono">DOI: 10.3390/s26072043</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
         href="https://www.gisjournal.us.edu.pl/index.php/gis-odyssey-journal/article/view/139"
         target="_blank"
         class="group block p-8 bg-white rounded-3xl border border-grass-100 hover:border-grass-400 hover:shadow-xl hover:shadow-grass-500/5 transition-all"

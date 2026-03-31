@@ -86,6 +86,18 @@ onUnmounted(() => {
       <span class="text-grass-600 font-bold uppercase tracking-widest text-sm">{{ t('lawFirm.category') }}</span>
       <h1 class="text-6xl font-black mt-4 mb-8 leading-tight max-w-4xl">{{ t('lawFirm.title') }}</h1>
       <p class="text-2xl text-forest-900/60 leading-relaxed max-w-3xl">{{ t('lawFirm.description') }}</p>
+      <a
+        href="https://kancelaria.znajomizprawem.pl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 mt-8 px-6 py-3 bg-grass-600 text-white rounded-2xl font-bold hover:bg-grass-700 transition-colors group"
+      >
+        <span>{{ t('lawFirm.checkOutApp') }}</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M7 17L17 7" />
+          <path d="M7 7h10v10" />
+        </svg>
+      </a>
     </div>
 
     <!-- Client Section -->

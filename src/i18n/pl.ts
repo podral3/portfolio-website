@@ -28,6 +28,7 @@ export default {
     dog: {
       title: 'DoggyWalk',
       desc: 'Platforma mobilna integrująca lokalną społeczność właścicieli psów.',
+      status: 'W trakcie tworzenia - wkrótce',
       role: 'Moja Rola (Bazy & API)',
       roleDesc: 'Stworzyłem API w ASP .NET z wykorzystaniem wzorca Backend for Frontend, zaimplementowałem współdzielenie lokalizacji w czasie rzeczywistym za pomocą SignalR.',
     },

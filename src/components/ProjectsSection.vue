@@ -61,6 +61,9 @@ const { t } = useI18n()
         <div class="p-10">
           <h3 class="text-2xl font-bold mb-4">{{ t('projects.dog.title') }}</h3>
           <p class="text-forest-900/70 mb-8 leading-relaxed">{{ t('projects.dog.desc') }}</p>
+          <div class="inline-flex items-center px-3 py-1.5 rounded-lg bg-amber-50 text-amber-800 border border-amber-200 text-xs font-bold uppercase tracking-wide mb-6">
+            {{ t('projects.dog.status') }}
+          </div>
           <div class="bg-grass-50 rounded-2xl p-6 border border-grass-100/50 mb-8">
             <h4 class="text-xs font-black uppercase text-grass-800 tracking-wider mb-2">{{ t('projects.dog.role') }}</h4>
             <p class="text-sm text-forest-900/80 leading-relaxed">{{ t('projects.dog.roleDesc') }}</p>

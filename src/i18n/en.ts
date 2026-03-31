@@ -28,6 +28,7 @@ export default {
     dog: {
       title: 'DoggyWalk',
       desc: 'Mobile application integrating a local community of dog owners via real-time location sharing.',
+      status: 'In development - coming soon',
       role: 'My Role (Backend Developer)',
       roleDesc: 'ASP .NET Api built with Backend for Frontend pattern, real-time location sharing using SignalR and maintaining PostgreSQL database.',
     },
